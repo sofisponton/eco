@@ -7,6 +7,7 @@ import titulo from './assets/logo.png';
 import eco from './assets/eco-titulo.png';
 import insetos from './assets/insetos-titulo.png';
 import sobre from './assets/sobre-titulo.png';
+import prof from './assets/prof.png';
 
 function HomeScreen({navigation}){
   return(
@@ -97,6 +98,9 @@ function Insetos({navigation}) {
 A diversidade de insetos é um indicador da saúde ecológica de um ecossistema. Ecossistemas saudáveis geralmente possuem uma grande variedade de insetos, cada um desempenhando um papel específico na teia alimentar e nas interações ecológicas. A perda de diversidade de insetos pode ter efeitos cascatares em toda a cadeia alimentar e na estabilidade do ecossistema, afetando a disponibilidade de alimentos para outros organismos e reduzindo a resistência a perturbações ambientais.
 
 Além disso, os insetos têm sido fonte de inspiração para inúmeras descobertas científicas e aplicações tecnológicas, desde a produção de seda até o desenvolvimento de novos medicamentos. Portanto, entender e conservar a diversidade de insetos é essencial para a manutenção da biodiversidade global e para o desenvolvimento sustentável de nossas sociedades.</Text>
+      
+     
+
       <Pressable style={{flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
@@ -119,8 +123,15 @@ function AboutScreen({navigation}) {
   return (
     <ImageBackground source={fundo} resizeMode='cover' style={{flex: 1,justifyContent: 'center'}}>
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-    <Image source={sobre} style={{ width: 300, height: 200, }} />
-        
+    <Image source={sobre} style={{ width: 300, height: 200,  }} />
+  
+ 
+    <Image source={prof} style={{ width: 200, height: 200, marginTop:60 }}/>
+    <Text> </Text>
+        <Text>Nome: Sofia Sponton Lima</Text>
+        <Text>RM: 07694</Text>
+
+
       <Pressable style={{flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
@@ -129,7 +140,7 @@ function AboutScreen({navigation}) {
             borderRadius: 20,
             elevation: 3,
             backgroundColor: '#4A8D43',
-            marginTop: 65,
+            marginTop: 150,
             height: 60,
         }} onPress={()=>navigation.goBack()}>
         <Text  style={{color: '#F9FDED', fontWeight: 'bold'}}>Voltar</Text>
