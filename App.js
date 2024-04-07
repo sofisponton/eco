@@ -8,6 +8,8 @@ import eco from './assets/eco-titulo.png';
 import insetos from './assets/insetos-titulo.png';
 import sobre from './assets/sobre-titulo.png';
 import prof from './assets/prof.png';
+import borboleta from './assets/borboleta.png';
+import ecofoto from './assets/eco-foto.png';
 
 function HomeScreen({navigation}){
   return(
@@ -70,6 +72,9 @@ function Ecologia({navigation}) {
                Dentro da ecologia, são investigados os padrões e processos que influenciam as populações e comunidades de organismos. Isso inclui o estudo da dinâmica populacional, distribuição geográfica, diversidade de espécies e interações entre elas, como competição, predação e mutualismo.
                A ecologia desempenha um papel fundamental na compreensão e na conservação dos sistemas naturais. Ao estudar como os seres vivos interagem entre si e com seu ambiente, podemos desenvolver estratégias para a gestão sustentável dos recursos naturais e para a proteção da biodiversidade em nosso planeta.
           </Text>
+
+          <Image source={ecofoto} style={{ width: 80, height: 80, }}/>
+
       <Pressable style={{flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'center',
@@ -99,7 +104,7 @@ A diversidade de insetos é um indicador da saúde ecológica de um ecossistema.
 
 Além disso, os insetos têm sido fonte de inspiração para inúmeras descobertas científicas e aplicações tecnológicas, desde a produção de seda até o desenvolvimento de novos medicamentos. Portanto, entender e conservar a diversidade de insetos é essencial para a manutenção da biodiversidade global e para o desenvolvimento sustentável de nossas sociedades.</Text>
       
-     
+     <Image source={borboleta} style={{ width: 80, height: 80, }}/>
 
       <Pressable style={{flexDirection: 'row',
             alignItems: 'center',
@@ -109,7 +114,7 @@ Além disso, os insetos têm sido fonte de inspiração para inúmeras descobert
             borderRadius: 20,
             elevation: 3,
             backgroundColor: '#4A8D43',
-            marginTop: 65,
+            marginTop: 25,
             height: 60,
         }} onPress={()=>navigation.goBack()}>
         <Text  style={{color: '#F9FDED', fontWeight: 'bold'}}>Voltar</Text>
